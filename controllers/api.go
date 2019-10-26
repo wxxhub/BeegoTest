@@ -4,17 +4,20 @@ import (
 	"github.com/astaxie/beego"
 )
 
-type ApiController struct {
+// APIController .
+type APIController struct {
 	beego.Controller
 }
 
+// User .
 type User struct {
 	Name string  //首字母一定要大写
 	Age  int
 	Sex  string	
 }
 
-func (a *ApiController) Get() {
+// Get .
+func (a *APIController) Get() {
 	a.Data["json"] = &User{
 		Name : "www",
 		Age : 18,

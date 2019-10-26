@@ -11,6 +11,6 @@ func init() {
 	beego.Router("/test", &controllers.TestController{})
 	beego.Router("/coockie_test", &controllers.CoockieController{})
 	beego.Router("/temple", &controllers.TempleTestController{})
-	beego.Router("/api", &controllers.ApiController{})
+	beego.Router("/api", &controllers.APIController{})
 	beego.Router("/file", &controllers.FileController{})
 }
